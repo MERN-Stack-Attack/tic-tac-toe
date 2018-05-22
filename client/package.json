@@ -1,0 +1,31 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.1.0",
+  "description": "Frontend to MERN-Stack-Attack's first Project: Multiplayer tic-tac-toe game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MERN-Stack-Attack/tic-tac-toe.git"
+  },
+  "author": "MERN-Stack-Attack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MERN-Stack-Attack/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/MERN-Stack-Attack/tic-tac-toe#readme",
+  "dependencies": {
+    "react": "16.3.2",
+    "react-dom": "16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "webpack": "4.8.3"
+  }
+}
