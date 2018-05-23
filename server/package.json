@@ -1,7 +1,8 @@
 {
   "name": "tic-tac-toe",
   "version": "0.1.0",
-  "description": "Backend to pMERN-Stack-Attack's first Project: Multiplayer tic-tac-toe game",
+  "description":
+    "Backend to MERN-Stack-Attack's first Project: Multiplayer tic-tac-toe game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
