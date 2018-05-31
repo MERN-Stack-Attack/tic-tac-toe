@@ -3,6 +3,8 @@ const app = express();
 var bodyParser = require('body-parser');
 const path = require('path');
 
+const UserRoutes = require('./server/routes/user');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -20,6 +22,9 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   console.log('connected to mongoDB'); // we're connected!
 });
+
+//add routes
+UserRoutes(app); //add routes for user DB
 
 app.set('port', process.env.PORT || 3001);
 
