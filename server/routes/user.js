@@ -1,4 +1,7 @@
 const Authenticate = require('../auth/middleware');
+const passport = require('passport'); //todo
+const PassportStrategies = require('../auth/strategies'); //load passport strategies into passport
+const authenticateLocal = passport.authenticate('local', { session: false });
 
 module.exports = function(app) {
   //test route
@@ -8,4 +11,7 @@ module.exports = function(app) {
 
   //signup user
   app.post('/api/user/signup', Authenticate.signup);
+
+  //signin user
+  app.post('/api/user/signin', authenticateLocal, Authenticate.signin);
 };

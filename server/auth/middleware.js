@@ -46,3 +46,13 @@ exports.signup = function(req, res, next) {
     });
   });
 };
+
+//sign in middleware. password has been authenticated using passport local strategy
+exports.signin = function(req, res, next) {
+  //USER on request. validated & passed on by Passport local tsrategy
+  const user = req.user;
+
+  //remove password before returning user object back to client
+  user.password = undefined;
+  res.json({ success: true, token: getToken(req.user), user });
+};
